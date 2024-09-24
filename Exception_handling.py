@@ -4,16 +4,16 @@
 
 user_input = "Brian2" #input("Please enter a name: ")
 
-# for letter in user_input:
-# 	if not letter.isalpha():
-# 		raise Exception("Please enter a valid name")
-# 	print(letter)
+for letter in user_input:
+	if not letter.isalpha():
+		raise Exception("Please enter a valid name")
+	print(letter)
 
 #Assert. Assertion makes sure the code stops if it does not assert to true
 
-# for letter in user_input:
-# 	assert letter.isalpha(), ValueError("Please enter a valid name") # or Exception("Please enter a value") or "Please enter a value"
-# 	print(letter)
+for letter in user_input:
+	assert letter.isalpha(), ValueError("Please enter a valid name") # or Exception("Please enter a value") or "Please enter a value"
+	print(letter)
 
 #Try...except it executes code in the try block if it fails it executes the except.
 
@@ -60,3 +60,4 @@ def list_sum(arr):
 	return answer
 
 print(list_sum([1,2,3,'g',7,8,'z']))
+
