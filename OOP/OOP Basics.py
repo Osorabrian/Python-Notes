@@ -51,8 +51,8 @@ print(mercedes.sell()) #You can access via methods
 
 class Truck(Car): #When inheriting from parent class we input the parent class in parentheses
     
-    def __init__(self, payload):
-        super().__init__('Mercedes') # we call the constructor of parent class
+    def __init__(self,make, payload):
+        super().__init__(make) # we call the constructor of parent class
         self.payload = payload
         print("Truck is Created")
         
@@ -62,7 +62,7 @@ class Truck(Car): #When inheriting from parent class we input the parent class i
     def capacity(self):
         return f"The payload of this truck is {self.payload}kgs."
         
-actros = Truck(5000)
+actros = Truck('Actros',5000)
 print(actros.body_type())
 print(actros.payload)
 print(actros.make)
