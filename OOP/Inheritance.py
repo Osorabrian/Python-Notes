@@ -8,8 +8,6 @@ class Clock(object):
     def get_time(self):
         return f"{self.__hour}:{self.__minute}:{self.__second}"
     
-# rolex = Clock(12,0,0)
-
 class Calender(object):
     
     def __init__(self, day, month, year):
@@ -23,8 +21,6 @@ class Calender(object):
     def get_date(self):
         return f"{self.__month}/{self.__day}/{self.__year}"
     
-# new_calender = Calender(12,4,2001)
-
 class Day(Clock, Calender):
     
     def __init__(self, day, month, year, hour, minute, second):

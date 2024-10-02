@@ -2,6 +2,8 @@
 # Objects have attributes and methods.
 # We use classes to create objects. Class is a blueprint for creating objects
 # We use 'class' Keyword to create classes
+#Classes have two operations attribute reference and instantiantion
+
 
 class Car:
     
@@ -79,8 +81,8 @@ print(actros.capacity())
 
 class Hatchback(Car):
     
-    def __init__(self):
-        super().__init__('Mercedes')
+    def __init__(self, make):
+        super().__init__(make)
         print("hatchback has been created")
 
     def body_type(self):
